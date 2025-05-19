@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", sans-serif;
+   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 html,
@@ -58,11 +58,11 @@ body {
 }
 
 .header_top .header_top_email p:hover {
-    color: #000;
+    color: #ecbd31;
 }
 
 .header_top .header_top_contact p:hover {
-    color: #000;
+    color: #ecbd31;
 
 }
 
@@ -213,7 +213,9 @@ z-index: 999;
 /* .main_header ul li.mega_menu:hover a:after {
     transform: rotate(180deg);
 } */
-
+.rotated {
+  transform: rotate(180deg);
+}
 .main_header ul li.mega_menu:hover a i {
     transform: rotate(180deg);
 }
@@ -245,12 +247,13 @@ z-index: 999;
     text-decoration: none;
     text-align: left;
     font-size: 15px;
-
+transition:  all .3s ease-in-out;
 }
 
 .main_header_nav .dropdown li a:hover {
-    background-color: #ecbd31;
+    background-color: #ea3b47;
     color: #fff;
+    display: block;
 
 }
 
@@ -283,6 +286,9 @@ z-index: 999;
 }
 .mobile_nav_header .logo a {
     display: block;
+}
+.top_header_btn {
+    display: none;
 }
 
 .black_overlay {
@@ -455,7 +461,7 @@ textarea {
     font-size: 13px;
     text-align: left;
     font-weight: 600;
-    color: #808080;
+    color: #000000;
     width: 100%;
     border: none;
     border-bottom: 1px solid #333;
@@ -497,7 +503,7 @@ input[type="checkbox"] {
 }
 
 button:hover {
-    background-color: #ecbd31;
+    background-color: #000000;
 
 }
 
@@ -532,7 +538,7 @@ button:hover {
 .welcome_content h2 {
     font-size: 50px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.16;
     color: #242424;
     font-weight: 400;
      
@@ -540,12 +546,12 @@ button:hover {
 
 .welcome_content h2 span {
     display: block;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .welcome_content h4 {
     font-size: 22px;
-    line-height: 1;
+    line-height: 1.4;
     color: #504f4f;
     font-weight: 400;
     margin-bottom: 23px;
@@ -554,7 +560,7 @@ button:hover {
 
 .welcome_content p {
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #787878;
     font-weight: 400;
      
@@ -581,20 +587,20 @@ button:hover {
 .welcome_content_2 h2 {
     font-size: 50px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.16;
     color: #242424;
     font-weight: 400;
-     
+     text-transform: capitalize;
 }
 
 .welcome_content_2 h2 span {
     display: block;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .welcome_content_2 h4 {
     font-size: 22px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #504f4f;
     font-weight: 400;
     margin-bottom: 23px;
@@ -603,7 +609,7 @@ button:hover {
 
 .welcome_content_2 p {
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #787878;
     font-weight: 400;
      
@@ -661,7 +667,7 @@ button:hover {
 .contact_text h3 {
     font-size: 40px;
     letter-spacing: -1px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #ffffff;
     font-weight: 400;
      
@@ -698,7 +704,7 @@ button:hover {
     border-radius: 25px;
     cursor: pointer;
     font-size: 20px;
-    line-height: 1px;
+    line-height: 1.9;
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
@@ -708,8 +714,7 @@ button:hover {
 }
 
 .contact_button a:hover {
-    /* color: #e73d3a; */
-    background: #ecbd31;
+    background: #000000;
 
 }
 
@@ -768,7 +773,7 @@ button:hover {
 .service_heading h2 {
     font-size: 50px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.16;
     color: #242424;
     font-weight: 400;
     margin-bottom: 16px;
@@ -912,7 +917,7 @@ button:hover {
  .outdoor_service_heading h2 {
     font-size: 50px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.16;
     color: #242424;
     font-weight: 400;
      
@@ -1068,7 +1073,7 @@ button:hover {
 .project_section .project_heading h2 {
     font-size: 50px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.16;
     color: #242424;
     font-weight: 400;
      
@@ -1447,7 +1452,7 @@ body {
     transition: all .3s ease-in-out;
 }
 .project_btn a:hover{
-    background-color: #ecbd31;
+    background-color: #000000;
 }
 .tab__content-item .row {
     row-gap: 26px;
@@ -1463,6 +1468,8 @@ body {
     flex-direction: column;
  row-gap: 18px;
     margin-top: 106px;
+
+    width: 50%;
 }
 
 .tab .main_tab_list .tab__item::before {
@@ -1563,7 +1570,7 @@ body {
     transition: all .3s ease-in-out;
 }
 .tab .second_tab_list .tab__item:hover{
-    color: #ecbd31;
+    color: #ea3b47;
 }
 .tab .second_tab_list .tab__item.is--active {
     background-color: #e8e5e5;
@@ -1577,7 +1584,7 @@ body {
 .tab__content {
     padding: 32px;
     padding-right: 0;
-    max-width: 1040px;
+    /* max-width: 1040px; */
     padding-left: 0;
     /* background: #ffffff; */
     border-radius: 0 10px 10px;
@@ -1705,7 +1712,7 @@ body {
 .contract_content h2 {
     font-size: 50px;
     letter-spacing: -1px;
-    line-height: 1.2;
+    line-height: 1.16;
     color: #242424;
     font-weight: 400;
      
@@ -1720,7 +1727,7 @@ body {
 
 .contract_content p {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     color: #504f4f;
     font-weight: 400;
      
@@ -1775,7 +1782,7 @@ body {
 
 .contract_area_text p {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.5;
     color: #5b5b5b;
     font-weight: 400;
      
@@ -1818,7 +1825,7 @@ body {
 .decoration_content h2 {
     font-size: 50px;
     letter-spacing: -1px;
-    line-height: 1.2;
+    line-height: 1.16;
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
@@ -1832,7 +1839,7 @@ body {
 
 .decoration_content p {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.5;
     color: #fff;
     letter-spacing: 1px;
     font-weight: 400;
@@ -1886,7 +1893,7 @@ body {
 }
 
 .decoration_list_text a:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 /* decoration-section-ends */
@@ -1933,7 +1940,7 @@ body {
 .accordion button:hover,
 .accordion button:focus {
     cursor: pointer;
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .accordion button:hover::after,
@@ -2073,7 +2080,7 @@ body {
 }
 
 .faq_button a:hover {
-    background-color: #ecbd31;
+    background-color: #000000;
 }
 
 /* faq-section-ends */
@@ -2096,7 +2103,10 @@ body {
     align-items: center;
     margin-bottom: -40px;
 }
+.testimonial_section .swiper-slide {
 
+    height: unset;
+}
 .testiomonial_content_area h3 {
     font-size: 17px;
     letter-spacing: 1px;
@@ -2129,12 +2139,13 @@ body {
     margin-top: -120px;
 }
 
-.testimonial_section .swiper-wrapper {
+/* .testimonial_section .swiper-wrapper {
     margin-top: 120px;
-}
+} */
 
 .testimonial_section .swiper {
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .testimonial_img img {
@@ -2168,7 +2179,7 @@ body {
     background-repeat: no-repeat;
     background-size: 70px;
     background-color: #f0e9e9;
-       
+       height: 100%;
 }
 
 .testimonial_content_img {
@@ -2192,10 +2203,10 @@ body {
     margin-bottom: 22px;
 }
 
-.testimonial_comment h3 {
+.testimonial_comment p {
     padding: 0 30px;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #626262;
     font-weight: 400;
      
@@ -2244,7 +2255,7 @@ body {
 
 .testimonial_prev_btn:hover,
 .testimonial_next_btn:hover {
-    background: #ecbd31;
+    background: #000000;
 }
 
 .testimonial_button_section svg {
@@ -2297,7 +2308,6 @@ body {
     text-transform: uppercase;
     color: #e73d3a;
     font-weight: 800;
-    font-family: "PlusJakartaSans-Light"
 }
 
 .our_latest_blog {
@@ -2337,7 +2347,7 @@ body {
 }
 
 .our_latest_blog a:hover {
-    background-color: #ecbd31;
+    background-color: #000000;
 }
 
 .our_latest_content {
@@ -2420,7 +2430,7 @@ body {
     font-size: 16px;
     line-height: 1;
     margin-bottom: 41px;
-    color: #b6b6b6;
+    color: #000000;
     font-weight: 400;
      
 }
@@ -2441,7 +2451,7 @@ body {
 }
 
 .blog_form form button:hover {
-    background-color: #ecbd31;
+    background-color: #000000;
 }
 
 /* blog-section-ends */
@@ -2559,7 +2569,7 @@ body {
 }
 
 .footer_list_text a:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_contact_area h3 {
@@ -2591,7 +2601,7 @@ body {
 }
 
 .footer_contact_icon a p:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_contact_icon a span p {
@@ -2604,7 +2614,7 @@ body {
 }
 
 .footer_contact_icon a i:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_contact_email a {
@@ -2625,7 +2635,7 @@ body {
 }
 
 .footer_contact_email a p:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_contact_email a i {
@@ -2635,7 +2645,7 @@ body {
 }
 
 .footer_contact_email a i:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_contact_number a {
@@ -2656,7 +2666,7 @@ body {
 }
 
 .footer_contact_number a p:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_contact_number a i {
@@ -2666,7 +2676,7 @@ body {
 }
 
 .footer_contact_number a i:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_social_meadia {
@@ -2707,7 +2717,7 @@ body {
 }
 
 .footer_social_content a:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_social_content a i {
@@ -2734,11 +2744,11 @@ body {
 }
 
 .footer_social_content a i:hover {
-    background-color: #ecbd31;
+    background-color: #ea3b47;
 }
 
 .footer_social_content a span:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 .footer_social_content .fa-brands:before,
@@ -2788,7 +2798,7 @@ body {
 }
 
 .copyright_policy a:hover {
-    color: #ecbd31;
+    color: #ea3b47;
 }
 
 /* footer-section-ends */
