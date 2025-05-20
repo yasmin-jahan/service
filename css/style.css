@@ -362,8 +362,7 @@ transition:  all .3s ease-in-out;
 
 .hero_section_content {
     position: relative;
-    background-color: #190607;
-    opacity: 0.788;
+    background-color: #190607b5;
     height: 100%;
     margin-top: auto;
 }
@@ -2434,7 +2433,6 @@ body {
     font-weight: 400;
      
 }
-
 .blog_form form button {
     font-size: 14px;
     line-height: 1;
@@ -2803,3 +2801,304 @@ body {
 
 /* footer-section-ends */
 /* footer-section-ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about-page-starts */
+/* about-page-starts */
+
+
+/* hero-section-starts */
+/* hero-section-starts */
+
+.about_hero_section{
+    position: relative;
+    background-image: url(/img/hero_img.png);
+    background-position: center;
+    overflow: hidden;
+    padding: 140px 0;
+}
+/* .abour_hero_image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: -1;
+} */
+
+/* .about_hero_content{
+     position: relative;
+    padding: 140px 0;
+   text-align: center;
+} */
+.about_hero_content h3{
+    font-size: 16px;
+line-height: 1.5;
+color: #787878;
+font-weight: 400;
+font-family: "Plus Jakarta Sans";
+text-align: center;
+}
+.about_hero_content h2{
+    font-size: 70px;
+letter-spacing: -1px;
+line-height: 1.14;
+color: #fff;
+font-weight: 700;
+text-transform: capitalize;
+font-family: "Plus Jakarta Sans";
+text-align: center;
+}
+/* hero-section-ends */
+/* hero-section-ends */
+
+
+
+/* company-section-starts */
+/* company-section-starts */
+.company_section{
+    position: relative;
+   background-color: #efefef;
+   padding: 60px 0;
+}
+.company_content h2{
+    font-size: 50px;
+     margin-bottom: 23px;
+letter-spacing: -1px;
+line-height: 1.16;
+color: #242424;
+font-weight: 400;
+
+}
+.company_content h2 span{
+    font-weight: 700;
+}
+.company_content h3{
+    font-size: 22px;
+   margin-bottom: 20px;
+line-height: 1.4;
+color: #504f4f;
+font-weight: 400;
+text-align: center;
+padding: 0 132px;
+}
+.company_content p{
+    font-size: 16px;
+line-height: 1.5;
+color: #787878;
+font-weight: 400;
+text-align: center;
+padding: 0 101px;
+}
+/* company-section-ends */
+/* company-section-ends */
+
+/* transforming-section-starts */
+/* transforming-section-starts */
+.transforming_section{
+    /* background-color: #bbd8dd; */
+    padding: 75px 0;
+}
+.transforming_content h2{
+    font-size: 50px;
+letter-spacing: -1px;
+line-height: 1.16;
+color: #242424;
+margin-bottom: 19px;
+font-weight: 400;
+
+}
+.transforming_content h2 span{
+    color: #e73d3a;
+    font-weight: 700;
+}
+.transforming_content p{
+    font-size: 16px;
+line-height: 1.5;
+color: #787878;
+font-weight: 400;
+/* padding-right: 36px; */
+}
+.transforming_content_image{
+    position: relative;
+    column-gap: 20px;
+}
+.transforming_image{
+    max-width: 400px;
+    height: 275px;
+}
+.transforming_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.transforming_text_1 p{
+    position: absolute;  
+    top: 28px;
+    left: 270px;
+    background-color: #e73d3a;
+    color: #ffffff;
+    padding: 4px 14px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+}
+.transforming_text_2 p{
+    position: absolute;  
+    bottom: 15px;
+    left: 383px;
+    background-color: #e73d3a;
+    color: #ffffff;
+    padding: 4px 23px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+}
+/* transforming-section-ends */
+/* transforming-section-ends */
+
+
+/* mission-section-starts */
+/* mission-section-starts */
+.mission_section{
+    /* background-color: aqua; */
+    padding: 70px 0;
+    padding-bottom: 100px;
+}
+
+.mission_image{
+    max-width: 570px;
+    height: 670px;
+}
+.mission_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mission_content_area{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.mission_content h2{
+    margin-bottom: 29px;
+    text-transform: capitalize;
+    font-size: 50px;
+letter-spacing: -1px;
+line-height: 1.16;
+color: #242424;
+font-weight: 400;
+}
+.mission_content h2 span{
+    font-weight: 700;
+}
+.mission_content h3{
+    font-size: 22px;
+line-height: 1.4;
+color: #504f4f;
+font-weight: 400;
+margin-bottom: 20px;
+}
+.mission_content p{
+  font-size: 16px;
+line-height: 1.4;
+color: #787878;
+font-weight: 400;
+font-weight: 400;
+}
+/* mission-section-ends */
+/* mission-section-ends */
+
+/* keep-section-starts */
+/* keep-section-starts */
+.keep_section{
+    /* background-color: rgb(34, 32, 31); */
+    padding: 40px 0;
+    position: relative;
+    z-index: 9;
+}
+.keep_wrapper{
+    background-color: #ffffff;
+    margin-bottom: -150px;
+    padding: 10px 30px;
+  filter: drop-shadow(0 0 19px rgba(19,19,19,0.13));
+
+}
+.keep_heading h2{
+    font-size: 30px;
+letter-spacing: -1px;
+line-height: 1.9;
+color: #242424;
+font-weight: 600;
+}
+.keep_heading p{
+    font-size: 16px;
+line-height: 1.5;
+color: #787878;
+font-weight: 400;
+}
+.keep_form form label{
+    font-size: 13px;
+line-height: 1.5;
+color: #464646;
+font-weight: 600;
+margin-bottom: 15px;
+}
+.keep_form form input[type="text"],  .keep_form form input[type="email"], .keep_form form textarea {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 41px;
+    color: #000000;
+    font-weight: 400;
+}
+.keep_form form button{
+        font-size: 14px;
+    line-height: 1;
+    background-color: #e73d3a;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 20px;
+    /* margin-top: 30px; */
+    margin-bottom: 0px;
+    transition: all .3s ease-in-out;
+}
+.keep_form form button:hover{
+    background-color: #000000;
+}
+.keep_form form input[type="text"]::placeholder, .keep_form form  textarea::placeholder{
+    color: #b6b6b6;;
+   
+}
+/* keep-section-ends */
+/* keep-section-ends */
+
+
+
+
+
+/* footer-section-starts */
+/* footer-section-starts */
+.about_footer_area{
+    padding-top: 150px;
+}
+/* footer-section-ends */
+/* footer-section-ends */
+/* about-page-ends */
+/* about-page-ends */
