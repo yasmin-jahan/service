@@ -1352,11 +1352,11 @@
         height: 35px;
     }
 
-    .accordion button .icon::after {
+    .faq_section .accordion button .icon::after {
         left: 17px;
     }
 
-    .accordion button .icon::before {
+    .faq_section .accordion button .icon::before {
         left: 13px;
     }
 
@@ -1528,11 +1528,11 @@
         display: inline-block;
     }
 
-    .accordion button .accordion-title {
+    .faq_section .accordion button .accordion-title {
         padding: 1em 4.5em 1em 0;
     }
 
-    .accordion button .icon {
+    .faq_section .accordion button .icon {
         top: 50%;
         transform: translateY(-50%);
 
@@ -1834,24 +1834,24 @@
         margin-bottom: 0px;
     }
 
-    .accordion .accordion-content p {
+    .faq_section .accordion .accordion-content p {
         line-height: 1.4;
     }
 
-    .accordion button[aria-expanded='true']+.accordion-content {
+    .faq_section .accordion button[aria-expanded='true']+.accordion-content {
         max-height: 15em;
     }
 
-    .accordion button .accordion-title {
+    .faq_section .accordion button .accordion-title {
         padding: 1em 2.5em 1em 0;
     }
 
-    .accordion button .icon::before {
+    .faq_section .accordion button .icon::before {
         top: 13px;
         left: 10px;
     }
 
-    .accordion button .icon::after {
+    .faq_section .accordion button .icon::after {
         top: 9px;
         left: 14px;
     }
@@ -1867,15 +1867,15 @@
 
     /* faq-section-starts */
     /* faq-section-starts */
-    .accordion button {
+    .faq_section .accordion button {
         font-size: 13px;
     }
 
-    .accordion .accordion-content p {
+    .faq_section .accordion .accordion-content p {
         font-size: 12px;
     }
 
-    .accordion button .accordion-title {
+    .faq_section .accordion button .accordion-title {
         padding: 1em 4.5em 1em 0;
     }
 
@@ -1884,18 +1884,18 @@
         font-size: 13px;
     }
 
-    .accordion button .icon {
+    .faq_section .accordion button .icon {
         width: 25px;
         height: 25px;
     }
 
-    .accordion button .icon::before {
+    .faq_section .accordion button .icon::before {
         top: 11px;
         left: 9px;
         width: 9px;
     }
 
-    .accordion button .icon::after {
+    .faq_section .accordion button .icon::after {
         top: 8px;
         left: 12px;
         height: 9px;
@@ -2219,8 +2219,6 @@ font-size: 45px;
 }
 
 
-/* about-page-ends */
-/* about-page-ends */
 
 @media only screen and (max-width:991px){
     /* company-section-starts */
@@ -2443,4 +2441,131 @@ font-size: 45px;
   margin-bottom: 35px;
 }
 /* keep-section-ends */
+}
+
+
+/* about-page-ends */
+/* about-page-ends */
+
+
+
+
+
+
+
+
+
+
+
+/* faq-page-starts */
+/* faq-page-starts */
+
+@media only screen and (max-width:1400px){
+/* faq-section-starts */
+
+.accordion button .question {
+    font-size: 23px;
+   display: inline-block;
+}
+.accordion button .number {
+     top: 50%;
+   transform: translateY(-50%);
+}
+.accordion button .faq_icon {
+   top: 50%;
+   transform: translateY(-50%);
+}
+.second_faq {
+top: 0;
+}
+.faq_page_content {
+    margin-bottom: 50px;
+}
+.faq_page_section .accordion button[aria-expanded='true']+.accordion-content {
+    max-height: 13em;
+}
+/* faq-section-ends */
+
+}
+
+
+
+@media only screen and (max-width:991px){
+    /* faq-section-starts */
+    .faq_image_area {
+    max-width: unset;
+    width: 100%;
+    height: 500px;
+}
+.faq_page_section .accordion {
+  margin-bottom: 30px;
+}
+.faq_page_section {
+    padding: 45px 0;
+}
+.faq_page_section .accordion button .faq_icon {
+    width: 25px;
+    height: 25px;
+
+}
+.accordion button .question {
+    font-size: 20px;
+}
+    /* faq-section-ends */
+}
+
+@media only screen and (max-width:575px){
+    /* hero-section-starts */
+    .about_hero_content h2 {
+    font-size: 40px;
+}
+    /* hero-section-end */
+
+
+    /* faq-section-starts */
+.faq_image_area {
+    height: 450px;
+}
+.faq_page_section {
+    padding: 30px 0;
+    padding-bottom: 10px;
+}
+    
+    /* faq-section-ends */
+}
+
+@media only screen and (max-width:480px){
+
+    /* faq-section-starts */
+    .accordion button .question {
+    padding: 1em 2.5em 1em 40px;
+}
+.accordion button .question {
+    font-size: 19px;
+}
+.faq_image_area {
+    height: 370px;
+}
+.faq_page_section .accordion button .question {
+    font-size: 16px;
+}
+ .faq_page_section .accordion button .number {
+  width: 22px;
+  height: 22px;
+}
+ .faq_page_section .accordion button .faq_icon {
+    width: 22px;
+    height: 22px;
+}
+    /* faq-section-ends */
+
+}
+
+@media only screen and (max-width: 360px){
+    .about_hero_content h2 {
+    font-size: 38px;
+}
+.faq_image_area {
+    height: 320px;
+}
 }
