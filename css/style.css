@@ -2901,6 +2901,25 @@ font-weight: 400;
 text-align: center;
 padding: 0 101px;
 }
+.company_arrow_btn i{
+    position: absolute;
+    left: 50%;
+    bottom: -9%;
+    background-color: #fff;
+    height: 65px;
+    width: 65px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 50%;
+}
+.company_arrow_btn i::before{
+  
+    top: 23px;
+    left: 24px;
+    
+    color: #ea3b47;
+    position: relative;
+}
 /* company-section-ends */
 /* company-section-ends */
 
@@ -3102,3 +3121,210 @@ margin-bottom: 15px;
 /* footer-section-ends */
 /* about-page-ends */
 /* about-page-ends */
+
+
+
+
+
+
+
+
+/* faq-page-starts */
+/* faq-page-starts */
+
+
+/* hero-section-starts */
+.faq_hero{
+    padding: 105px 0;
+}
+/* hero-section-starts */
+
+/* .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+} */
+
+.accordion button .question {
+  padding: 1em 1.5em 1em 40px;
+}
+
+/* .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+} */
+
+/* .accordion button .number::after{
+    position: absolute;
+     top: 90px;
+  left: 5px;
+/* } */
+/* .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #67ea3b;
+} */
+.accordion button .faq_icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .faq_icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 10px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+} 
+/* 
+.accordion button[aria-expanded='true'] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+} */
+/* .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+} */
+
+
+
+
+
+
+
+.faq_page_section{
+    /* background-color: pink; */
+    padding: 75px 0;
+}
+.faq_page_content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.accordion button .number{
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    width: 25px;
+    height: 25px; 
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+.accordion button .faq_icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  background-color: #eeeeee;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.accordion button .faq_icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 6px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+.accordion .answer p{
+font-size: 16px;
+line-height: 1.5;
+color: #787878;
+font-weight: 400;
+padding-left: 35px;
+}
+.accordion button .question{
+    font-size: 25px;
+    letter-spacing: 0;
+    /* color: #242424; */
+    font-weight: 500;
+    line-height: 1.16;
+   
+}
+.faq_image_area{
+    max-width: 470px;
+    height: 570px;
+}
+.faq_image_area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second_faq{
+    position: relative;
+    top: 15%;
+}
+.faq_page_section .accordion {
+    --bs-accordion-border-color: none;
+}
+/* faq-page-ends */
+/* faq-page-ends */
