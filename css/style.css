@@ -2805,7 +2805,7 @@ body {
 
 .about_hero_section{
     position: relative;
-    background-image: url(/img/hero_img.png);
+    background-image: url(../img/hero_img.png);
     background-position: center;
     overflow: hidden;
     padding: 140px 0;
@@ -3324,7 +3324,7 @@ padding-left: 35px;
 
 .service_page_section{
     position: relative;
-    background-image: url(/img/service_banner_img.png);
+    background-image: url(../img/service_banner_img.png);
     background-position: center;
     overflow: hidden;
     padding: 120px 0;
@@ -3526,7 +3526,7 @@ font-weight: 400;
 /* hero-section-starts */
 .outdoor_page_section {
     position: relative;
-    background-image: url(/img/outdoor_banner.png);
+    background-image: url(../img/outdoor_banner.png);
     background-position: center;
     overflow: hidden;
     padding: 140px 0;
