@@ -43,6 +43,15 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
 // max-MatchHeight
 
 
+
+// Apply matchHeight to elements with class "work_text"
+function MatchHeight() {
+  $('.work_text p').matchHeight();
+}
+
+// Call the function
+MatchHeight();
+
 // testimonial-swiper
 
 var swiper = new Swiper(".testimonial_swiper", {
@@ -181,7 +190,38 @@ $(document).ready(function(){
 // });
 
 
+ $(document).ready(function () {
+      let isSmallScreen = () => window.innerWidth <= 767;
 
+      let serviceClickedOnce = false;
+
+      $('.mega_menu_a').click(function (e) {
+        if (isSmallScreen()) {
+          e.preventDefault(); // Prevent immediate link navigation
+          let $parent = $(this).parent();
+
+          // Toggle dropdown
+          $parent.toggleClass('show');
+
+          // If already clicked once, follow link
+          if (serviceClickedOnce) {
+            window.location.href = $(this).attr('href');
+          }
+
+          // Set flag
+          serviceClickedOnce = true;
+
+          // Reset the flag after 1 second
+          setTimeout(() => {
+            serviceClickedOnce = false;
+          }, 1000);
+        }
+      });
+
+
+
+   
+    });
 
 
 
@@ -189,3 +229,5 @@ $(document).ready(function(){
 
 // faq-page-section
 // faq-page-section
+
+
