@@ -153,13 +153,7 @@ $(document).ready(function () {
     $(".black_overlay").fadeOut();
   });
 
-  // $('.mega_menu_a').click(function (e) {
-  //   if (window.innerWidth <= 767) {
-  //     e.preventDefault();
-  //     $(this).next('.dropdown').slideToggle();
-  //     $(this).find('.mean-expand').toggleClass('rotated');
-  //   }
-  // });
+ 
 
   // menu
 
