@@ -969,7 +969,7 @@
 
     .main_header .main_header_nav ul li a {
         color: #000;
-        font-size: 13px;
+        font-size: 14px;
         padding: 15px 0;
         /* margin-left: -8px; */
     }
@@ -1058,9 +1058,10 @@
     .main_header .main_header_nav ul li ul li a {
         font-size: 13px;
 /* position: relative; */
-        padding: 5px 22px;
+        padding: 5px 15px;
+        color: #3d3636;
     }
-    .main_header .main_header_nav ul li ul li a::before{
+    /* .main_header .main_header_nav ul li ul li a::before{
      content: "";
      position: absolute;
     width: 10px;
@@ -1068,7 +1069,7 @@
     top: 12px;
     left:3px;
     background: #000;
-  }
+  } */
    .mean-expand{
         width: 30px;
         height: 30px;
