@@ -189,17 +189,6 @@ z-index: 999;
 
 } */
 
-/* .rotated {
-  transform: rotate(180deg);
-} */
-/* .main_header ul li.mega_menu:hover a i {
-    transform: rotate(180deg);
-      transition: all .3s ease-in-out;
-} */
-.main_header ul li:hover a i {
-    transform: rotate(180deg);
-      transition: all .3s ease-in-out;
-}
 .main_header ul li.mega_menu:hover a {
     transition: all .3s ease-in-out;
 }
