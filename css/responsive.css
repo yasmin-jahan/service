@@ -2598,6 +2598,7 @@ top: 0;
  .faq_page_section .accordion button .number {
   width: 22px;
   height: 22px;
+  font-size: 14px;
 }
  .faq_page_section .accordion button .faq_icon {
     width: 22px;
@@ -2890,6 +2891,17 @@ padding: 0;
 .company_content h3 {
     font-size: 16px;
 }
+.company_arrow_btn {
+    bottom: -5%;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+.company_arrow_btn::before {
+    top: 16px;
+    left: 17px;
+}
 .painter_btn i {
     height: 50px;
     width: 50px;
@@ -2914,11 +2926,12 @@ padding: 0;
 .service_arrow_btn {
     height: 50px;
     width: 50px;
-    font-size: 22px;
+    font-size: 20px;
+    bottom: -28px;
 }
 .service_arrow_btn::before {
-    top: 15px;
-    left: 15px;
+    top: 16px;
+    left: 16px;
     color: #ea3b47;
     position: relative;
 }
