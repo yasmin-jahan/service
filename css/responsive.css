@@ -1079,11 +1079,9 @@
         align-items: center;
         justify-content: center;
         background-color: #e93c42;
-        /* color: #fff; */
+        color: #fff;
     }
-    .mean-expand:hover{
-        background-color: #000000;
-    }
+
 .main_header_nav .dropdown li a:hover {
    display: none;;
 
