@@ -212,33 +212,58 @@ $(document).ready(function () {
   //     }, 1000);
   //   }
   // });
+  
+// $(document).ready(function () {
+//   $('.main_header_nav ul li:has(ul) > a').each(function () {
+//     $(this).append('<span class="mean-expand"> <i class="fa-solid fa-angle-down"></i></span>')
+//   });
+
+//   if ($(window).width() <= 767) {
+//     $(".main_header_nav ul li:has(ul) > a .mean-expand").on("click", function (e) {
+//       e.preventDefault();
+//       if ($(this).parent().hasClass("active")) {
+//         $(this).parent().removeClass("active");
+//         $(this).parent()
+//           .siblings("ul")
+//           .slideUp(200);
+//       } else {
+//         $(".main_header_nav ul li:has(ul) > a").removeClass("active");
+//         $(this).parent().addClass("active");
+//         $(".main_header_nav li ul").slideUp(200);
+//         $(this).parent()
+//           .siblings("ul")
+//           .slideDown(200);
+//       }
+//     });
+//   }
+
+// });
+
+
 $(document).ready(function () {
+  // Add dropdown icons
   $('.main_header_nav ul li:has(ul) > a').each(function () {
-    $(this).append('<span class="mean-expand"> <i class="fa-solid fa-angle-down"></i></span>')
+    $(this).append('<span class="mean-expand"><i class="fa-solid fa-angle-down"></i></span>');
   });
 
-  if ($(window).width() <= 767) {
-    $(".main_header_nav ul li:has(ul) > a .mean-expand").on("click", function (e) {
-      e.preventDefault();
-      if ($(this).parent().hasClass("active")) {
-        $(this).parent().removeClass("active");
-        $(this).parent()
-          .siblings("ul")
-          .slideUp(200);
-      } else {
-        $(".main_header_nav ul li:has(ul) > a").removeClass("active");
-        $(this).parent().addClass("active");
-        $(".main_header_nav li ul").slideUp(200);
-        $(this).parent()
-          .siblings("ul")
-          .slideDown(200);
-      }
-    });
-  }
+  // Handle click on dropdown icon
+  $('.main_header_nav').on('click', '.mean-expand', function (e) {
+    e.preventDefault();
+    e.stopPropagation(); // Prevent anchor click
 
+    let parentLi = $(this).closest('li');
+
+    if (parentLi.hasClass("active")) {
+      parentLi.removeClass("active");
+      parentLi.children("ul").slideUp(200);
+    } else {
+      $(".main_header_nav ul li").removeClass("active");
+      $(".main_header_nav li ul").slideUp(200);
+      parentLi.addClass("active");
+      parentLi.children("ul").slideDown(200);
+    }
+  });
 });
-
-
 
 
 
