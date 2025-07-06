@@ -232,7 +232,7 @@ transition:  all .3s ease-in-out;
   transform: rotate(180deg);
 }
 /* Hide dropdown by default */
-.main_header_nav ul li ul {
+/* .main_header_nav ul li ul {
     width: 100%;
     background-color: #fff;
     position: absolute;
@@ -242,16 +242,44 @@ transition:  all .3s ease-in-out;
     min-width: unset;
     width: auto;
     display: none;
-     min-width: 150px;         /* ensures a nice base width */
-  width: fit-content;       /* only as wide as the content */
+     min-width: 150px;   
+  width: fit-content;       
   white-space: nowrap; 
     margin: 0px;
     box-shadow: 8px 3px 10px rgba(11, 11, 11, 0.1);
-}
+    transition: all .3s ease;
+} */
 
 /* Show dropdown on hover */
-.main_header_nav li:has(ul):hover .dropdown {
+/* .main_header_nav li:has(ul):hover .dropdown {
     display: block;
+} */
+/* Initial dropdown hidden state */
+.main_header_nav li .dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 999;
+    background-color: #fff;
+    min-width: 150px;
+    width: fit-content;
+    white-space: nowrap;
+    margin: 0;
+    box-shadow: 8px 3px 10px rgba(11, 11, 11, 0.1);
+    pointer-events: none; /* Prevents interaction when hidden */
+}
+
+/* Show dropdown smoothly on hover */
+.main_header_nav li:has(.dropdown):hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 
