@@ -240,10 +240,39 @@ $(document).ready(function () {
 // });
 
 
+// $(document).ready(function () {
+//   // Add dropdown icons
+//   $('.main_header_nav ul li:has(ul) > a').each(function () {
+//     $(this).append('<span class="mean-expand"><i class="fa-solid fa-angle-down"></i></span>');
+//   });
+
+//   // Handle click on dropdown icon
+//   $('.main_header_nav').on('click', '.mean-expand', function (e) {
+//     e.preventDefault();
+//     e.stopPropagation(); // Prevent anchor click
+
+//     let parentLi = $(this).closest('li');
+
+//     if (parentLi.hasClass("active")) {
+//       parentLi.removeClass("active");
+//       parentLi.children("ul").slideUp(200);
+//     } else {
+//       $(".main_header_nav ul li").removeClass("active");
+//       $(".main_header_nav li ul").slideUp(200);
+//       parentLi.addClass("active");
+//       parentLi.children("ul").slideDown(200);
+//     }
+//   });
+  
+ 
+// });
+
 $(document).ready(function () {
-  // Add dropdown icons
+  // Add dropdown icons (only once)
   $('.main_header_nav ul li:has(ul) > a').each(function () {
-    $(this).append('<span class="mean-expand"><i class="fa-solid fa-angle-down"></i></span>');
+    if (!$(this).find('.mean-expand').length) {
+      $(this).append('<span class="mean-expand"><i class="fa-solid fa-angle-down"></i></span>');
+    }
   });
 
   // Handle click on dropdown icon
@@ -252,15 +281,33 @@ $(document).ready(function () {
     e.stopPropagation(); // Prevent anchor click
 
     let parentLi = $(this).closest('li');
+    let isMobile = $(window).width() < 575;
 
     if (parentLi.hasClass("active")) {
       parentLi.removeClass("active");
-      parentLi.children("ul").slideUp(200);
+
+      if (isMobile) {
+        parentLi.children("ul").slideUp(200);
+      } else {
+        parentLi.children("ul").hide(); // instantly hide
+      }
     } else {
       $(".main_header_nav ul li").removeClass("active");
-      $(".main_header_nav li ul").slideUp(200);
+      $(".main_header_nav li ul").each(function () {
+        if (isMobile) {
+          $(this).slideUp(200);
+        } else {
+          $(this).hide(); // instantly hide
+        }
+      });
+
       parentLi.addClass("active");
-      parentLi.children("ul").slideDown(200);
+
+      if (isMobile) {
+        parentLi.children("ul").slideDown(200);
+      } else {
+        parentLi.children("ul").show(); // instantly show
+      }
     }
   });
 });
