@@ -797,11 +797,11 @@ button:hover {
     height: 100%;
     width: 100%;
     background-color: #e73d3a;
-    opacity: 0.800;
+    opacity: 0;
     cursor: pointer;
-    visibility: hidden;
+    pointer-events: none;
     text-align: center;
-    transition: all .2s ease-in-out;
+    transition: all .4s ease-in-out;
 
 }
 
@@ -821,14 +821,12 @@ button:hover {
     color: #ffffff;
     text-align: center;
     font-weight: 500;
-     
     transition: all .3s ease;
 }
 
  .service_contnet_box:hover .service_content {
-
-    visibility: visible;
-
+opacity:0.800 ;
+pointer-events: auto;
 }
 
  .service_contnet_box:hover .service_img p {
@@ -961,17 +959,16 @@ button:hover {
     width: 100%;
     padding: 39px;
     background-color: #e73d3a;
-    opacity: 0.800;
+    opacity: 0;
     cursor: pointer;
     text-align: center;
-    visibility: hidden;
-    transition: all .2s ease-in-out;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
 }
 
  .outdoor_service_content_box:hover .outdoor_service_content {
-
-    visibility: visible;
-
+opacity:0.800 ;
+pointer-events: auto;
 }
 
 .outdoor_service_content_box:hover .outdoor_service_image p {
