@@ -494,7 +494,7 @@ button:hover {
 /* welcome-section-starts */
 
 .welcome_section {
-    /* background-color: aqua; */
+    background-color:#fff;
     padding: 50px 0;
 }
 
@@ -720,7 +720,7 @@ button:hover {
 /* service-section-starts */
 
 .service_section {
-    /* background-color: aqua; */
+    background-color:#fff;
     padding: 79px 0;
 }
 
@@ -1021,7 +1021,7 @@ pointer-events: auto;
 /* project-section-starts */
 /* project-section-starts */
 .project_section {
-    /* background-color: aqua; */
+    background-color:#fff;
     padding: 100px 0;
     padding-bottom: 0;
 }
@@ -1877,11 +1877,7 @@ body {
 /* faq-section-starts */
 /* faq-section-starts */
 .faq_section {
-    /* background-color: aqua; */
-    /* padding-top: 65px;
-    padding-bottom: 130px;
-    padding-left: 0;
-    padding-right: 0; */
+    background-color:#fff;
     padding: 80px 0;
 }
 
@@ -2064,10 +2060,9 @@ body {
 /* testimonial-section-starts */
 .testimonial_section {
     position: relative;
-    /* background-color: pink; */
+   background-color:#fff;
     padding: 70px 0;
     padding-top: 0;
-    /* padding-bottom: 100px; */
 }
 
 .testiomonial_content_area {
@@ -2918,7 +2913,7 @@ padding: 0 101px;
 /* transforming-section-starts */
 /* transforming-section-starts */
 .transforming_section{
-    /* background-color: #bbd8dd; */
+  background-color:#fff;
     padding: 75px 0;
 }
 .transforming_content h2{
@@ -2990,7 +2985,7 @@ font-weight: 400;
 /* mission-section-starts */
 /* mission-section-starts */
 .mission_section{
-    /* background-color: aqua; */
+    background-color:#fff;
     padding: 70px 0;
     padding-bottom: 100px;
 }
@@ -3173,26 +3168,7 @@ margin-bottom: 15px;
   padding: 1em 1.5em 1em 40px;
 }
 
-/* .accordion button .icon {
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  right: 0;
-  width: 22px;
-  height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
-} */
 
-/* .accordion button .number::after{
-    position: absolute;
-     top: 90px;
-  left: 5px;
-/* } */
-/* .accordion button:hover, .accordion button:focus {
-    cursor: pointer;
-    color: #67ea3b;
-} */
 .accordion button .faq_icon::before {
   display: block;
   position: absolute;
@@ -3213,40 +3189,9 @@ margin-bottom: 15px;
   height: 10px;
   background: currentColor;
 } 
-/* 
-.accordion button[aria-expanded='true'] {
-  color: #03b5d2;
-}
-.accordion button[aria-expanded='true'] .icon::after {
-  width: 0;
-}
-.accordion button[aria-expanded='true'] + .accordion-content {
-  opacity: 1;
-  max-height: 9em;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
-} */
-/* .accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height;
-}
-.accordion .accordion-content p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 2em 0;
-} */
-
-
-
-
-
-
 
 .faq_page_section{
-    /* background-color: pink; */
+    background-color:#fff;
     padding: 75px 0;
 }
 .faq_page_content{
