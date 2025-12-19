@@ -2803,6 +2803,8 @@ color: #ea3b47;
     background-image: url(../img/hero_img.png);
     background-position: center;
     overflow: hidden;
+     background-repeat: no-repeat;
+    background-size: cover;
     padding: 140px 0;
     z-index: 1;
 }
